@@ -607,11 +607,22 @@ body {
 .article-image::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   opacity: 0.1;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.6), transparent 65%);
+}
+
+.article-image > div.article-image-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 72px;
+  opacity: 0.7;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover .article-image > div.article-image-icon {
+  transform: scale(1.12) rotate(-3deg);
 }
 
 .article-content {

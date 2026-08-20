@@ -7,6 +7,7 @@ const articles = [
         date: "2025-11-10",
         reading_time: "8 min read",
         tags: ["Web Development", "Architecture", "Performance"],
+        image : "🏗️",
         image_color: "#6366f1",
         content: `# Building Scalable Web Applications in 2025
       
@@ -42,6 +43,7 @@ const articles = [
         date: "2025-11-05",
         reading_time: "6 min read",
         tags: ["Frontend", "JavaScript", "Trends"],
+        image : "🖥️",
         image_color: "#8b5cf6",
         content: `# The Future of Frontend Development
 
@@ -66,6 +68,7 @@ const articles = [
         date: "2025-10-28",
         reading_time: "10 min read",
         tags: ["CSS", "Layout", "Design"],
+        image : "📐",
         image_color: "#ec4899",
         content: `# Mastering CSS Grid and Flexbox
 
@@ -98,6 +101,7 @@ const articles = [
         date: "2025-10-20",
         reading_time: "7 min read",
         tags: ["Node.js", "Backend", "Performance"],
+        image : "⚙️",
         image_color: "#10b981",
         content: `# Node.js Performance Tips
 
@@ -125,6 +129,7 @@ const articles = [
         date: "2025-10-15",
         reading_time: "9 min read",
         tags: ["Database", "SQL", "Architecture"],
+        image : "🗄️",
         image_color: "#f59e0b",
         content: `# Database Design Best Practices
 
@@ -149,6 +154,7 @@ const articles = [
         date: "2025-10-08",
         reading_time: "8 min read",
         tags: ["Security", "Authentication", "Backend"],
+        image : "🔐",
         image_color: "#ef4444",
         content: `# Modern Authentication Strategies
 
@@ -169,13 +175,13 @@ const articles = [
 ];
 
 const skills = [
+    { name: "C# .NET", icon: "🔷" },
     { name: "JavaScript/TypeScript", icon: "⚡" },
     { name: "React/Next.js", icon: "⚛️" },
-    { name: "Node.js", icon: "🟢" },
+    { name: "Node.js", icon: "⬢ " },
     { name: "Python", icon: "🐍" },
-    { name: "Database Design", icon: "💾" },
+    { name: "Database Design", icon: "🗄️" },
     { name: "Cloud Architecture", icon: "☁️" },
-    { name: "DevOps", icon: "🔧" },
     { name: "UI/UX Design", icon: "🎨" }
 ];
 
@@ -217,7 +223,7 @@ function renderArticles() {
     grid.innerHTML = filteredArticles.map(article => `
                 <div class="article-card" onclick="openArticle(${article.id})">
                     <div class="article-image" style="background: ${article.image_color}">
-                        <div style="font-size: 72px; opacity: 0.3;">📝</div>
+                        <div class="article-image-icon">${article.image}</div>
                     </div>
                     <div class="article-content">
                         <div class="article-meta">
