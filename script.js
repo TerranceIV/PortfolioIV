@@ -1,133 +1,94 @@
 // Data
-const articles = [
+const projects = [
     {
         id: 1,
-        title: "Building Scalable Web Applications in 2025",
-        excerpt: "Explore modern architecture patterns and best practices for building high-performance web applications that scale.",
-        date: "2025-11-10",
-        reading_time: "8 min read",
-        tags: ["Web Development", "Architecture", "Performance"],
+        title: "Progress Sitefinity CMS Upgrade",
+        excerpt: "Major Version Migration & Security Hardening",
+        date: "Year of 2023",
+        info: "Migration & Version upgrade",
+        tags: ["Migration", "Versioning Upgrade" , "Security"],
         image : "🏗️",
         image_color: "#6366f1",
-        content: `# Building Scalable Web Applications in 2025
-      
-                Modern web applications need to handle increasing loads while maintaining performance. In this article, we'll explore key principles.
+        content: `       
+                Led the end-to-end migration of the corporate Progress Sitefinity CMS from version 13.3 to 14.4, overseeing the transition from legacy .NET Framework–based implementations to ASP.NET MVC 5 architecture.
 
-                ## Architecture Patterns
+                ### Transforming the CMS architecture
 
-                Microservices, serverless, and edge computing are reshaping how we build applications. Each pattern has its strengths.
+                Refactored and modernized custom widgets to improve code maintainability, readability, and alignment with Sitefinity's recommended MVC patterns.
 
-                ### Microservices
-                Breaking down applications into smaller, independent services allows for better scalability and maintainability.
+                ### Security Hardening
 
-                ### Serverless
-                Focus on code, not infrastructure. Serverless computing abstracts away server management.
+                Addressed all findings from Vulnerability Assessment and Penetration Testing (VAPT), systematically eliminating security issues such as insecure direct object references, XSS vectors, and misconfigurations to meet enterprise security standards.
 
-                ## Performance Optimization
+                ### Requirements Gathering and UX Improvements
 
-                Speed matters. Users expect sub-second load times. Here are key strategies:
-
-                - Code splitting and lazy loading
-                - CDN distribution
-                - Image optimization
-                - Caching strategies
-
-                ## Conclusion
-
-                Building scalable applications requires careful planning and the right architecture choices.`
+                Collaborated with business stakeholders and product owners to gather requirements for service requests, design new feature widgets, and implement UX improvements that enhanced content authoring workflows and end-user navigation.`
     },
     {
         id: 2,
-        title: "The Future of Frontend Development",
-        excerpt: "Dive into emerging trends in frontend development, from new frameworks to revolutionary rendering techniques.",
-        date: "2025-11-05",
-        reading_time: "6 min read",
-        tags: ["Frontend", "JavaScript", "Trends"],
-        image : "🖥️",
+        title: "Sitefinity → Directus CMS with TypeScript + Next.js",
+        excerpt: "Architecture Refresh",
+        date: "Year of 2025",
+        info: "Tech refresh",
+        tags: ["Architecture", "TypeScript", "Tech Trends"],
+        image : "🔁",
         image_color: "#8b5cf6",
-        content: `# The Future of Frontend Development
+        content: `
+                Spearheaded a strategic technology refresh by migrating the content platform from Progress Sitefinity to Directus as a headless CMS, coupled with a modern front-end built on TypeScript and Next.js.
 
-                The frontend landscape continues to evolve rapidly. Let's explore what's next.
+                <li>Designed and implemented a custom integration layer between Directus and the internal Optical CMS, enabling seamless data interoperability and unified content operations.</li>
 
-                ## New Rendering Paradigms
+                <li>Established robust workflows for data model evolution, including schema versioning, automated data synchronization pipelines, and controlled publishing processes for backend content management.</li>
 
-                From SSR to ISR to PPR (Partial Prerendering), rendering strategies are becoming more sophisticated.
+                <li>Configured and enforced granular user permissions and role-based access control (RBAC) for page modules, ensuring least-privilege access and auditability across content teams.</li>
 
-                ## Framework Evolution
-
-                Frameworks are focusing on performance and developer experience. React Server Components, Svelte 5, and Solid.js are pushing boundaries.
-
-                ## Key Takeaways
-
-                Stay curious and keep learning. The future is exciting!`
-                    },
+                <li>Explored and prototyped custom Directus extensions to augment out-of-the-box capabilities, tailoring the CMS to complex business requirements around content modeling, validation, and workflow automation.</li>
+                `
+    },
     {
         id: 3,
-        title: "Mastering CSS Grid and Flexbox",
-        excerpt: "A comprehensive guide to modern CSS layout techniques that every developer should know.",
-        date: "2025-10-28",
-        reading_time: "10 min read",
-        tags: ["CSS", "Layout", "Design"],
-        image : "📐",
+        title: " .NET 8 Microservices Platform on AWS",
+        excerpt: "Microservices",
+        date: "Year of 2024",
+        info: "Cloud technology",
+        tags: [" .NET", "Microservices", "AWS"],
+        image : "☁️",
         image_color: "#ec4899",
-        content: `# Mastering CSS Grid and Flexbox
+        content: `
+                Architected and developed a cloud-native microservices solution on .NET 8, fully integrated with AWS infrastructure to deliver scalable, resilient, and secure backend services.
 
-                CSS Grid and Flexbox are powerful tools for creating responsive layouts.
+                Leveraged AWS services including EC2 for compute, RDS for managed relational databases, private VPC for network isolation, S3 for object storage, Lambda for serverless functions, API Gateway for API management, CloudFront for global content delivery, and Secrets Manager for secure credential handling.
 
-                ## When to Use Grid vs Flexbox
+                Implemented a lightweight search capability that ingests CSV uploads, transforms and validates data, and persists structured records into the database with strong consistency guarantees.
 
-                Grid excels at two-dimensional layouts, while Flexbox is perfect for one-dimensional arrangements.
-
-                ## Practical Examples
-
-                Let's build a responsive dashboard layout using CSS Grid.
-
-                \`\`\`css
-                .container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2rem;
-                }
-                \`\`\`
-
-                ## Conclusion
-
-                Master these techniques to build beautiful, responsive layouts efficiently.`
+                Designed queuing mechanisms and background processing pipelines to handle large-scale data ingestion, transformation, and database updates while preserving data integrity and system responsiveness under load.
+                `
     },
     {
         id: 4,
-        title: "Node.js Performance Tips",
-        excerpt: "Optimize your Node.js applications with these proven performance techniques and best practices.",
-        date: "2025-10-20",
-        reading_time: "7 min read",
+        title: "Governance Platform",
+        excerpt: "Fullstack Development .NET 10",
+        date: "Year of 2025",
+        info: "Fullstack",
         tags: ["Node.js", "Backend", "Performance"],
-        image : "⚙️",
+        image : "🏛️",
         image_color: "#10b981",
-        content: `# Node.js Performance Tips
+        content: `Governance Platform -> .NET 10 + Vue 3
+                Owned the design and development of a strategic governance platform built on the latest .NET 10 runtime with a Vue 3 front-end, targeting high performance, extensibility, and long-term maintainability.
 
-                Performance is critical for backend applications. Here's how to optimize Node.js.
+                Optimized database access patterns, query performance, and data-fetching strategies to improve system readiness, reduce latency, and support high-concurrency usage scenarios.
 
-                ## Event Loop Understanding
+                Maintained a clean, modular, and scalable codebase with clear separation of concerns, enabling rapid feature extension and easy onboarding for new team members.
 
-                Understanding the event loop is key to writing performant Node.js code.
-
-                ## Optimization Strategies
-
-                - Use clustering
-                - Implement caching
-                - Optimize database queries
-                - Use streams for large data
-
-                ## Monitoring
-
-                Always monitor your application in production to catch performance issues early.`
+                Embedded extensibility hooks and plugin-style architecture to support future modules, integrations, and domain-specific governance workflows without significant rework.
+                `
     },
     {
         id: 5,
         title: "Database Design Best Practices",
         excerpt: "Learn essential database design principles that will save you from future headaches and technical debt.",
-        date: "2025-10-15",
-        reading_time: "9 min read",
+        date: "Year of 2025",
+        info: "9 min read",
         tags: ["Database", "SQL", "Architecture"],
         image : "🗄️",
         image_color: "#f59e0b",
@@ -151,8 +112,8 @@ const articles = [
         id: 6,
         title: "Modern Authentication Strategies",
         excerpt: "Secure your applications with modern authentication methods including OAuth, JWT, and passwordless authentication.",
-        date: "2025-10-08",
-        reading_time: "8 min read",
+        date: "Year of 2025",
+        info: "8 min read",
         tags: ["Security", "Authentication", "Backend"],
         image : "🔐",
         image_color: "#ef4444",
@@ -187,12 +148,12 @@ const skills = [
 
 // State management
 let currentTheme = 'light';
-let currentArticle = null;
-let filteredArticles = [...articles];
+let currentProject = null;
+let filteredprojects = [...projects];
 
 // Initialize
 function init() {
-    renderArticles();
+    renderProjects();
     renderSkills();
     setupScrollEffects();
     setupTheme();
@@ -217,24 +178,24 @@ function setupTheme() {
     });
 }
 
-// Render articles
-function renderArticles() {
-    const grid = document.getElementById('articlesGrid');
-    grid.innerHTML = filteredArticles.map(article => `
-                <div class="article-card" onclick="openArticle(${article.id})">
-                    <div class="article-image" style="background: ${article.image_color}">
-                        <div class="article-image-icon">${article.image}</div>
+// Render projects
+function renderProjects() {
+    const grid = document.getElementById('projectsGrid');
+    grid.innerHTML = filteredprojects.map(project => `
+                <div class="project-card" onclick="openProject(${project.id})">
+                    <div class="project-image" style="background: ${project.image_color}">
+                        <div class="project-image-icon">${project.image}</div>
                     </div>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span>${article.date}</span>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>${project.date}</span>
                             <span>•</span>
-                            <span>${article.reading_time}</span>
+                            <span>${project.info}</span>
                         </div>
-                        <h3 class="article-title">${article.title}</h3>
-                        <p class="article-excerpt">${article.excerpt}</p>
-                        <div class="article-tags">
-                            ${article.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-excerpt">${project.excerpt}</p>
+                        <div class="project-tags">
+                            ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                         </div>
                     </div>
                 </div>
@@ -252,28 +213,28 @@ function renderSkills() {
             `).join('');
 }
 
-// Open article
-function openArticle(id) {
-    currentArticle = articles.find(a => a.id === id);
-    if (!currentArticle) return;
+// Open project
+function openProject(id) {
+    currentProject = projects.find(a => a.id === id);
+    if (!currentProject) return;
 
-    const articleHeader = document.getElementById('articleHeader');
-    const articleBody = document.getElementById('articleBody');
+    const projectHeader = document.getElementById('projectHeader');
+    const projectBody = document.getElementById('projectBody');
 
-    articleHeader.innerHTML = `
-                <div class="article-meta">
-                    <span>${currentArticle.date}</span>
+    projectHeader.innerHTML = `
+                <div class="project-meta">
+                    <span>${currentProject.date}</span>
                     <span>•</span>
-                    <span>${currentArticle.reading_time}</span>
+                    <span>${currentProject.info}</span>
                 </div>
-                <h1 class="article-title" style="font-size: var(--font-size-4xl); margin-top: var(--space-12);">${currentArticle.title}</h1>
-                <div class="article-tags" style="margin-top: var(--space-16);">
-                    ${currentArticle.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                <h1 class="project-title" style="font-size: var(--font-size-4xl); margin-top: var(--space-12);">${currentProject.title}</h1>
+                <div class="project-tags" style="margin-top: var(--space-16);">
+                    ${currentProject.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
                 </div>
             `;
 
     // Simple markdown-like rendering
-    const html = currentArticle.content
+    const html = currentProject.content
         .replace(/### (.*?)\n/g, '<h3>$1</h3>')
         .replace(/## (.*?)\n/g, '<h2>$1</h2>')
         .replace(/# (.*?)\n/g, '<h1>$1</h1>')
@@ -284,42 +245,41 @@ function openArticle(id) {
         .replace(/^(.)/g, '<p>$1')
         .replace(/(.)$/g, '$1</p>');
 
-    articleBody.innerHTML = html;
+    projectBody.innerHTML = html;
 
-    showSection('article');
+    showSection('project');
     window.scrollTo(0, 0);
 }
 
-// Filter articles
-function filterArticles() {
+// Filter projects
+function filterprojects() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
     if (!searchTerm) {
-        filteredArticles = [...articles];
+        filteredprojects = [...projects];
     } else {
-        filteredArticles = articles.filter(article => {
-            const titleMatch = article.title.toLowerCase().includes(searchTerm);
-            const tagsMatch = article.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+        filteredprojects = projects.filter(project => {
+            const titleMatch = project.title.toLowerCase().includes(searchTerm);
+            const tagsMatch = project.tags.some(tag => tag.toLowerCase().includes(searchTerm));
             return titleMatch || tagsMatch;
         });
     }
 
-    renderArticles();
+    renderProjects();
 }
 
 // Show section
 function showSection(section) {
     const heroSection = document.getElementById('heroSection');
     const searchSection = document.getElementById('searchSection');
-    const articlesSection = document.getElementById('articlesSection');
-    const articleView = document.getElementById('articleView');
+    const projectsSection = document.getElementById('projectsSection');
+    const projectView = document.getElementById('projectView');
     const aboutSection = document.getElementById('aboutSection');
 
     // Hide all
-    heroSection.style.display = 'none';
     searchSection.classList.add('hidden');
-    articlesSection.classList.add('hidden');
-    articleView.classList.remove('active');
+    projectsSection.classList.add('hidden');
+    projectView.classList.remove('active');
     aboutSection.classList.add('hidden');
 
     // Show selected
@@ -327,17 +287,19 @@ function showSection(section) {
         case 'home':
             heroSection.style.display = 'flex';
             searchSection.classList.remove('hidden');
-            articlesSection.classList.remove('hidden');
+            projectsSection.classList.remove('hidden');
             break;
-        case 'articles':
+        case 'projects':
+            heroSection.style.display = 'flex';
             searchSection.classList.remove('hidden');
-            articlesSection.classList.remove('hidden');
-            window.scrollTo(0, 0);
+            projectsSection.classList.remove('hidden');
             break;
-        case 'article':
-            articleView.classList.add('active');
+        case 'project':
+            heroSection.style.display = 'none';
+            projectView.classList.add('active');
             break;
         case 'about':
+            heroSection.style.display = 'none';
             aboutSection.classList.remove('hidden');
             window.scrollTo(0, 0);
             break;
@@ -356,13 +318,23 @@ function setupScrollEffects() {
         }
 
         // Reading progress
-        if (document.getElementById('articleView').classList.contains('active')) {
+        if (document.getElementById('projectView').classList.contains('active')) {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
             document.getElementById('readingProgress').style.width = scrolled + '%';
         }
     });
+}
+
+// Smooth scroll to projects section
+function smoothScrollToProjects(event) {
+    event.preventDefault();
+    const projectsSection = document.getElementById('projectsSection');
+    projectsSection.scrollIntoView({
+        behavior: 'smooth'
+    });
+    showSection('projects');
 }
 
 // Handle form submit
